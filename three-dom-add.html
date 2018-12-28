@@ -1,0 +1,69 @@
+  <!DOCTYPE html>
+ <html  lang="zh">
+     <head>
+         <meta charset="utf-8">
+         <meta name="author" content="David">
+         <title>DOM添加</title>   
+     </head>
+
+     <body>
+     	<ul id="menu">
+          <li>首页</li> 
+          <li id="ll">联系我</li> 
+        </ul>
+
+
+
+     <script type="text/javascript">
+     	//1创建空元素
+      // var elem = document.createElement("元素名")
+      var table=document.createElement("table");
+      var tr=document.createElement("tr");
+      console.log(table);
+     
+     // 2设置关键属性
+     var aa=document.createElement("a");
+     aa.innerHTML="go to tmooc";
+     aa.href="http://tmooc.cn";
+     console.log(aa);
+
+     //2设置关键样式
+     aa.style.opacity="1";
+     aa.style.cssText="width:100px;height:100px";
+
+     //3 将元素添加到DOM树
+     // 3.1第一种：parentNode.appendChild(ChildNode)，追加最后一个子节点。
+     var div = document.createElement("div");
+     var txt = document.createElement("版权声明");
+     div.appendChild(txt);
+     document.body.appendChild(div);
+     console.log(div);
+
+     //3.2第二种：parentNode.insertBefore(newChild,exstingChild)
+     
+      var ul =document.getElementById('menu');
+      var newLi=document.createElement("li");
+      newLi.innerHTML="hello";
+      newLi.href="http://tmooc.cn";
+      ul.insertBefore(newLi,ll)
+
+
+      // 添加元素优化  文档片段
+      //创建片段
+      var frag=document.creatDocumentFragmnt();
+
+     //将子元素添加到片段上
+       frag.appendChild(child);
+
+     //将frag追加到页面
+       parent.appendChild(frag);
+
+
+
+
+
+
+
+     </script>
+     </body>
+     </html>

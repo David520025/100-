@@ -1,0 +1,41 @@
+  <!DOCTYPE html>
+ <html  lang="zh">
+     <head>
+         <meta charset="utf-8">
+         <meta name="author" content="David">
+         <title>bow</title>   
+     </head>
+
+     <body>
+
+      <script type="text/javascript">
+      console.log (window.innerWidth);
+
+      //定时器 让程序按照指定时间间隔自动执行任务 
+     
+      //1 周期性定时器
+      // setInterval(exp,time):周期性触发代码exp
+      // exp：执行语句
+      // time：时间周期，单位毫秒
+      setInterval(function() {
+          console.log ("world");
+      },1000)
+      
+      //停止定时器
+      //1、给定时器取名
+      var timer=setInterval(function() {
+          console.log ("hello,world");
+      },1000);
+
+      //2、停止定时器
+      clearInterval(timer);
+
+      // 1 一次性定时器  让程序延迟一段时间执行
+      // setTimeout(exp,time)
+       setTimeout(function(){
+         console.log ("hello");
+       },3000);
+     
+      </script>
+     </body>
+</html>
