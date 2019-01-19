@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='header'>
+     <image class='plus' src='../../assets/plus.png'></image>
+     <input class='new_todo' value='{{input}}' auto-focus='true' placeholder='anything to do' bindinput='dianjiinputHandle' bindconfirm='addToDoHandle'></input>
+  </view>
+  <block wx:if="{{todos}}">
+     <view class='todos_list'>
+       <view class='todo' wx:for="{{todos}}" wx:key="{{index}}" bindtap='xuanzhong' data-index='{{index}}'>
+         <icon class='checkbox' type='{{todos.completed ? "success" : "success_no_circle"}}'></icon>
+         <text class='name'>{{todos.name}}</text>
+         <icon class='remove' type='cancel'></icon>
+       </view>
+     </view>
+     <view class='footer'>
+       <text class='quanxuan'>全选</text>
+       <text class='leftcount'>{{leftCount}} {{leftCount >1 ? "items" : "item"}} left</text>
+       <text class='clear' bindtap='clearCompleted' wx:if="{{todos.length > leftCount}}">删除</text>
+     </view>
+  </block>
+</view>
