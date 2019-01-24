@@ -1,0 +1,33 @@
+
+<view class="container">
+  <view class='zhuti'>
+     <view class="touxiang">
+       <image src='../../image/jianli.jpg'></image>
+     </view>
+     <view class='name'>骑马人</view>
+     <view class="geyan">欲求人前骑马一瞬千里，需经人后养马火冒三丈</view>
+     <view class="geyan">学历：本科</view>
+     <view class="geyan">毕业院校：武汉纺织大学</view>
+     <view class="geyan">职业：微信小程序开发</view>
+  </view>
+
+
+  <view class='Introductiontoworkexperience'>
+    <view class='gongzuo'>工作ING</view>
+      <view class='content'>
+         <view class='jianjie four'  ><text bindtap='tiaozhuan2'>简介与自评\nPROFILE</text></view>
+         <view class='jineng four'  ><text  bindtap='tiaozhuan3'>技能\nTECHNICAL</text></view>
+      </view> 
+      <view class='content' >
+         <view class='jingli four'  ><text  bindtap='tiaozhuan4'>工作经历\nWORK EXPERIENCE</text></view>
+         <view class='xiangmu four' ><text  bindtap='tiaozhuan5'>项目经历\nPROJECT EXPERIENCE</text></view>
+      </view>
+  </view>
+
+  <view class='lifeing'>
+    <view class='life'>生活ING</view>
+       <view class='HOBBY'><text  bindtap='tiaozhuan6' >特长与爱好\nHOBBY</text></view>
+  </view>
+  
+</view>
+

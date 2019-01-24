@@ -1,0 +1,112 @@
+/**index.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+}
+
+.Introductiontoworkexperience {
+  
+  background-color: whitesmoke;
+  width: 100%
+
+}
+    .gongzuo{
+     padding: 20rpx;
+     width: 100%
+    }
+
+    .content{
+      font-size: 26rpx;
+      display: flex;
+      justify-content: space-around;
+      color:white;
+      
+    }
+      .four{
+        height:100rpx;
+        width: 260rpx;
+        padding-top: 50rpx;
+      }
+      
+     .jianjie{
+       background-color: rgb(162, 216, 146);
+       margin: 20rpx;
+       padding: 30rpx;
+       text-align: center;
+       display: inline-block;
+       box-shadow:  0 0 2px 2px rgb(162, 216, 146) ;
+     }
+     .jineng{
+       background-color: rgb(135, 43, 197);
+       margin: 20rpx;
+       padding: 30rpx;
+       text-align: center;
+        display: inline-block;
+        box-shadow:  0 0 2px 2px rgb(135, 43, 197) ;
+     }
+     .jingli{
+       background-color: rgb(218, 168, 75);
+       margin: 20rpx;
+       padding: 30rpx;
+       text-align: center;
+        display: inline-block;
+        box-shadow:  0 0 2px 2px rgb(218, 168, 75) ;
+     }
+     .xiangmu{
+       background-color: rgb(49, 184, 116);
+       margin: 20rpx;
+       padding: 30rpx;
+       text-align: center;
+        display: inline-block;
+        box-shadow:  0 0 2px 2px rgb(49, 184, 116) ;
+     }
+
+
+
+.lifeing{
+   padding: 20rpx;
+   
+   background-color: rgba(225, 230, 162, 0.397);
+   width: 100%
+   
+}
+  .life{
+   padding: 20rpx;
+    
+  }
+   .HOBBY{
+     color: white;
+     background-color: rgb(215, 226, 57);
+     margin: 20rpx;
+     padding: 30rpx;
+     text-align: center;
+     display: inline-block;
+     width: 80%;
+     height: 100rpx;
+     box-shadow:  0 0 2px 2px rgb(218, 168, 75);
+     margin-left: 20px;
+   }
+
+.zhuti{
+  text-align: center;
+  font-size: 22px;
+  background-color: rgb(216, 108, 108);
+  width: 100%
+}
+ .name{
+   font-size: 22px;
+ }
+ .geyan{
+   font-size: 16px;
+   margin-top: 5px;
+   margin-bottom: 2px;
+   
+ }
+image{
+  margin-top: 3px;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}

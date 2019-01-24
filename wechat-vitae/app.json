@@ -1,0 +1,47 @@
+{
+  "pages":[
+     "pages/index/index",
+     "pages/profile1/profile1",
+     "pages/profile2/profile2",
+     "pages/profile3/profile3",
+     "pages/profile4/profile4",
+     "pages/profile5/profile5",
+     "pages/profile6/profile6",
+     "pages/profile7/profile7",
+     "pages/profile8/profile8",
+     "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "代维铭-简历",
+    "navigationBarTextStyle":"black",
+    "text-align":"center"
+  },
+    "tabBar": {
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "iconPath": "image/wechat.png",
+          "selectedIconPath": "image/wechatHL.png",
+          "text": "始于颜值"
+        },
+        {
+          "pagePath": "pages/profile1/profile1",
+          "iconPath": "image/icon_API.png",
+          "selectedIconPath":"image/icon_API_HL.png",
+          "text": "陷于才华"
+        },
+
+        { "text": "忠于人品",
+           "iconPath": "image/icon_component.png",
+           "pagePath": "pages/profile1/profile1",
+           "selectedIconPath": "image/icon_component_HL.png"
+        }
+      ],
+      "position":"bottom",
+      "color":"black",
+      "selectedColor":"green",
+      "borderStyle":"black"
+  }
+}
