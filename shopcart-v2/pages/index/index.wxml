@@ -1,0 +1,32 @@
+
+<view class='cart-box'>
+  <view wx:for='{{carts}}' class='item-box'>
+    <icon wx:if="{{item.selected}}" type='success' color='red' bindtap='selectList' data-index='{{index}}'/>
+    <icon wx:else type='circle' bindtap='selectList' data-index='{{index}}'/>
+
+<!-- 带参数跳转 -->
+    <navigator url='../details/details?id={{item.id}}'>
+       <image  src='{{item.image}}'></image>
+    </navigator>
+
+    <view class='jiajian'>
+       <text bindtap='minusCount' data-index='{{index}}'>-</text>
+       <text>{{item.num}}</text>
+       <text bindtap='addCount' data-index='{{index}}'>+</text>
+    </view>
+    <view class='jiage'>
+      <text>￥{{item.price*item.num}}</text>
+      <text bindtap='deleteList' data-index='{{index}}'>×</text>
+    </view>    
+  </view>
+</view>
+
+<!-- 底部操作栏 -->
+<view class='bottom-box'>
+  <view class='bottom-content'>
+    <icon class='bottom-icon' wx:if="{{selectAllStatus}}" type="success" color='red' bindtap='selectAll'/>
+    <icon wx:else type='circle' color='#fff' bindtap='selectAll'/>
+    <text>全选</text>
+    <text>￥{{totalPrice}}</text>
+  </view>
+</view>

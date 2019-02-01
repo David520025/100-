@@ -1,0 +1,51 @@
+.cart-box{
+  border: solid 2rpx green;
+  padding: 20rpx
+}
+
+.item-box{
+  border: solid 2rpx yellow;
+  display: flex;
+  align-items: center
+}
+image{
+  width: 250rpx;
+  height: 200rpx;
+  padding: 20rpx;
+  margin-right: 100rpx
+}
+
+.jiajian{
+  display: flex;
+  justify-content: space-around;
+  width: 18%;
+  margin-right: 50rpx
+}
+.jiage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between
+}
+
+.bottom-box{
+  border: solid 2rpx green;
+  position: fixed;
+  bottom: 0rpx;
+  height: 100rpx;
+  background-color: gainsboro;
+  width: 97%;
+  margin: 10rpx;
+  line-height: 100rpx;
+}
+.bottom-content{
+  display: flex;
+  justify-content: space-between;
+  line-height: 100rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.bottom-icon{
+  position: relative;
+  top: 20rpx
+}
